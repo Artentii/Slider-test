@@ -1,0 +1,191 @@
+/* RESET CSS */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+p a {
+  display: inline;
+}
+
+li {
+  list-style-type: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+form,
+input,
+textarea,
+select,
+button,
+label {
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  background-color: transparent;
+  color: inherit;
+  display: block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+table,
+tr,
+td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  font-family: Helvetica, Arial, sans-serif;
+  color: black;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.Slider{
+    /* background-color: orange; */
+    margin: 20vh auto;
+    width: 90%;
+
+    position: relative;
+}
+.Slider-container{
+    background-color: lightblue;
+
+    position: relative;
+}
+.Slider-images{
+    background-color: lightgreen;
+    height: auto;
+    max-height: 30rem;
+    object-fit: cover;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+.Slider-images.isActive{
+    opacity: 1;
+}
+.Slider-images:nth-child(1){
+    position: static;
+}
+.Slider-button{
+    width: 3rem;
+    height: 3rem;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+
+    position: absolute;
+    top: calc( 50% - 1.5rem );
+}
+.Slider-button:hover{
+    background-color: white;
+}
+.Prev{
+    left: 2.5%;
+}
+.Next{
+    right: 2.5%;
+}
+.Button-svg{
+    transition: .5s ease;
+}
+.Button-svg:hover{
+    color: rgb(115, 3, 3);
+}
+.Slider-ul{
+    /* background-color: lightskyblue; */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    margin: .5rem
+}
+.Slider-li{}
+.Slider-dot{
+    width: 2rem;
+    height: 2rem;
+    background-color: black;
+    border-radius: 50%;
+
+    cursor: pointer;
+    transition: dot .5s ease;
+}
+.Slider-dot.isActive{
+    background-color: rgb(115, 3, 3);
+}
