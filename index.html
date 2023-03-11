@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/index.js" defer></script>
+    <title>Toyota Slider</title>
+  </head>
+  <body>
+    <div class="Slider">
+      <div class="Slider-container">
+        <img src="assets/StickersToyota.png" alt="Image 1" class="Slider-images isActive" />
+        <img src="assets/Hoodie.png" alt="Image 2" class="Slider-images" />
+        <img src="assets/Magazine.png" alt="Image 3" class="Slider-images" />
+      </div>
+      <button class="Slider-button Prev">
+        <svg class="Button-svg" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
+          </svg>
+      </button>
+      <button class="Slider-button Next">
+        <svg class="Button-svg" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+          </svg>
+      </button>
+      <ul class="Slider-ul">
+        <li class="Slider-li">
+          <button class="Slider-dot isActive"></button>
+        </li>
+        <li class="Slider-li">
+          <button class="Slider-dot"></button>
+        </li>
+        <li class="Slider-li">
+          <button class="Slider-dot"></button>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
