@@ -118,13 +118,14 @@ body {
 }
 .Slider-container{
     background-color: lightblue;
+    min-height: 0;
 
     position: relative;
 }
 .Slider-images{
     background-color: lightgreen;
-    height: auto;
-    max-height: 30rem;
+    height: 100%;
+    max-height: 100%;
     object-fit: cover;
 
     position: absolute;
@@ -133,6 +134,11 @@ body {
 
     opacity: 0;
     transition: opacity .5s ease;
+}
+@media (min-width: 768px) {
+  .Slider {
+    width: 50%;
+  }
 }
 .Slider-images.isActive{
     opacity: 1;
